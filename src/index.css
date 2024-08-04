@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input {
+    @apply  w-1/2 border-none rounded-md py-2 my-2 shadow-md ps-2
+
+}
+
+.layer{
+    @apply opacity-0 absolute top-0 left-0 bg-[#1abc9c] w-full h-full hover:opacity-80 transition-all duration-500 hover:rounded-xl
+}
+.active{
+    @apply bg-[#1ABC9C] p-2 rounded-md
+}
+
+.icon{
+    @apply border border-white rounded-full p-2 hover:bg-[#1ABC9C] transition-all duration-500 hover:cursor-pointer
+}
+
+.line{
+    position: relative;
+    
+}
+.line::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 190%;
+    width: 90px;
+    height: 3px;
+
+}
+.line::before{
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 190%;
+    width: 90px;
+    height: 3px;
+
+}
+
+.line2{
+    position: relative;
+}
+
+.line2::after{
+    content: '';
+    background-color: #2C3E50;
+    position: absolute;
+    top: 50%;
+    right: 190%;
+    width: 90px;
+    height: 3px;
+
+}
+.line2::before{
+    content: '';
+    background-color: #2C3E50;
+    position: absolute;
+    top: 50%;
+    left: 190%;
+    width: 90px;
+    height: 3px;
+
+}
+
+
+
